@@ -5,15 +5,15 @@
 </head>
 <body>
   <h2>Simple Calculator (Connected to n8n)</h2>
-  <form action=http://localhost:5678/webhook/calculator" method="POST">
+  <form action="http://localhost:5678/webhook/calculator" method="POST">
     <label>Number 1:</label><br>
-    <input type="number" name="num1"><br><br>
+    <input type="number" name="num1" required><br><br>
 
     <label>Number 2:</label><br>
-    <input type="number" name="num2"><br><br>
+    <input type="number" name="num2" required><br><br>
 
     <label>Operation:</label><br>
-    <select name="operation">
+    <select name="operation" required>
       <option value="add">Add</option>
       <option value="subtract">Subtract</option>
       <option value="multiply">Multiply</option>
@@ -21,7 +21,7 @@
     </select><br><br>
 
     <label>Threshold:</label><br>
-    <input type="number" name="threshold"><br><br>
+    <input type="number" name="threshold" required><br><br>
 
     <button type="submit">Submit</button>
   </form>
