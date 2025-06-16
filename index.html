@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator Form</title>
+</head>
+<body>
+  <h2>Simple Calculator (Connected to n8n)</h2>
+  <form action="http://localhost:5678/webhook-test/da15cc3a-2b22-48ca-8fa6-c97cbfc0d2f8" method="POST">
+    <label>Number 1:</label><br>
+    <input type="number" name="num1"><br><br>
+
+    <label>Number 2:</label><br>
+    <input type="number" name="num2"><br><br>
+
+    <label>Operation:</label><br>
+    <select name="operation">
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+      <option value="divide">Divide</option>
+    </select><br><br>
+
+    <label>Threshold:</label><br>
+    <input type="number" name="threshold"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
